@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600&family=Bellota+Text&family=Dancing+Script:wght@700&family=Indie+Flower&family=Mulish&family=Poppins&family=Roboto&display=swap');
+body{
+    padding: 0%;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,20%);
+    grid-template-rows: repeat(4,200px);
+    grid-template-areas: 
+    'Main Main second three'
+    'Main Main four five'
+    'six seven eight nine'
+    'six ten eleven twelve'
+    ;
+    column-gap: 8px;
+    row-gap: 8px;
+  }
+  .grid-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
+    transition: all .1s linear;
+}
+.grid-item:hover{
+    transform: scale(1.03);
+  }
+  .grid-item1{
+    grid-area: Main;
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/7/2018/02/Earth-from-space-1-64e9a7c.jpg?resize=960%2C503)}
+  .grid-item2{
+      grid-area: second;
+      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGic-0Tr53lr1_GHumidDtTwowclfwKkl_CQ&usqp=CAU)}
+.grid-item3{
+    grid-area: three;
+    background-image: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699142400&semt=ais);
+}
+.grid-item4{
+    grid-area: four;
+    background-image: url(https://png.pngtree.com/background/20230527/original/pngtree-two-space-planets-are-out-in-the-space-picture-image_2756581.jpg);
+}
+.grid-item5{
+    grid-area: five;
+    background-image: url(https://img.freepik.com/free-photo/3d-render-space-background-with-abstract-planets-nebula_1048-12994.jpg);
+}
+  .grid-item6{
+    grid-area: six;
+    background-image: url(https://images.pexels.com/photos/1266810/pexels-photo-1266810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+
+}
+.grid-item7{
+    grid-area: seven;
+    background-image: url(https://live.staticflickr.com/65535/52211883534_f45cb76810_z.jpg)}
+  .grid-item8{
+      grid-area: eight;
+      background-image: url(https://cdn.britannica.com/06/72006-050-5EF22ECB/Michael-Lopez-Alegria-space-module-station-assembly-International-October-2000.jpg);
+    }
+    .grid-item9{
+        grid-area: nine;
+        background-image: url(https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  }
+  .grid-item10{
+    grid-area: ten;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFdo4y0M9uJ5ufMuve44_PV-TghVIm_ErcsmqnZWJOfQPk-bbhkmMOWNthgQJ9r3A6Wk&usqp=CAU);
+    background-position:unset;
+  }
+  .grid-item11{
+    grid-area: eleven;
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcbkoba9WfiQcyrwTgxIH07LU1KKCfA2G7xA&usqp=CAU); 
+  }
